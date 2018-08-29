@@ -15,7 +15,7 @@ var Room = {
 		'trap': {
 			name: _('trap'),
 			button: null,
-			maximum: 10,
+			maximum: 50,
 			availableMsg: _('builder says she can make traps to catch any creatures might still be alive out there'),
 			buildMsg: _('more traps to catch more creatures'),
 			maxMsg: _("more traps won't help now"),
@@ -23,7 +23,7 @@ var Room = {
 			cost: function() {
 				var n = $SM.get('game.buildings["trap"]', true);
 				return {
-					'wood': 1 
+					'wood': 2
 				};
 			}
 		},
