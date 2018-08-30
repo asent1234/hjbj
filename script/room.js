@@ -21,7 +21,6 @@ var Room = {
 			maxMsg: _("more traps won't help now"),
 			type: 'building',
 			cost: function() {
-				var n = $SM.get('game.buildings["trap"]', true);
 				return {
 					'wood': 2
 				};
@@ -49,9 +48,9 @@ var Room = {
 			maxMsg: _('no more room for huts.'),
 			type: 'building',
 			cost: function() {
-				var n = $SM.get('game.buildings["hut"]', true);
+				
 				return {
-					'wood': 100 + (n*50)
+					'wood': 10 
 				};
 			}
 		},
@@ -64,7 +63,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					wood: 200,
+					wood: 2,
 					fur: 10,
 					meat: 5
 				};
@@ -79,8 +78,8 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 400,
-					'fur': 100
+					'wood': 4,
+					'fur': 1
 				};
 			}
 		},
@@ -93,7 +92,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 500,
+					'wood': 50,
 					'fur': 50
 				};
 			}
