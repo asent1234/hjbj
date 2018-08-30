@@ -15,34 +15,34 @@ var Room = {
 		'trap': {
 			name: _('trap'),
 			button: null,
-			maximum: 50,
+			maximum: 100,
 			availableMsg: _('builder says she can make traps to catch any creatures might still be alive out there'),
 			buildMsg: _('more traps to catch more creatures'),
 			maxMsg: _("more traps won't help now"),
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 2
+					'wood': 0
 				};
 			}
 		},
 		'cart': {
 			name: _('cart'),
 			button: null,
-			maximum: 1,
+			maximum: 100,
 			availableMsg: _('builder says she can make a cart for carrying wood'),
 			buildMsg: _('the rickety cart will carry more wood from the forest'),
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 30
+					'wood': 0
 				};
 			}
 		},
 		'hut': {
 			name: _('hut'),
 			button: null,
-			maximum: 20,
+			maximum: 100,
 			availableMsg: _("builder says there are more wanderers. says they'll work, too."),
 			buildMsg: _('builder puts up a hut, out in the forest. says word will get around.'),
 			maxMsg: _('no more room for huts.'),
@@ -50,7 +50,7 @@ var Room = {
 			cost: function() {
 				
 				return {
-					'wood': 10 
+					'wood': 0 
 				};
 			}
 		},
@@ -63,9 +63,9 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					wood: 2,
-					fur: 10,
-					meat: 5
+					wood: 0,
+					fur: 0,
+					meat: 0
 				};
 			}
 		},
@@ -78,8 +78,8 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 4,
-					'fur': 1
+					'wood': 0,
+					'fur': 0
 				};
 			}
 		},
@@ -92,8 +92,8 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 50,
-					'fur': 50
+					'wood': 0,
+					'fur': 0
 				};
 			}
 		},
@@ -106,8 +106,8 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 600,
-					'meat': 50
+					'wood': 0,
+					'meat': 0
 				};
 			}
 		},
@@ -120,9 +120,9 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 800,
-					'leather': 100,
-					'scales': 10
+					'wood': 0,
+					'leather': 0,
+					'scales': 0
 				};
 			}
 		},
@@ -135,9 +135,9 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 1500,
-					'iron': 100,
-					'coal': 100
+					'wood': 0,
+					'iron': 0,
+					'coal': 0
 				};
 			}
 		},
@@ -150,9 +150,9 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 3000,
-					'steel': 100,
-					'sulphur': 50
+					'wood': 0,
+					'steel': 0,
+					'sulphur': 0
 				};
 			}
 		},
@@ -163,8 +163,8 @@ var Room = {
 			buildMsg: _('a torch to keep the dark away'),
 			cost: function() {
 				return {
-					'wood': 1,
-					'cloth': 1
+					'wood': 0,
+					'cloth': 0
 				};
 			}
 		},
@@ -176,7 +176,7 @@ var Room = {
 			buildMsg: _('this waterskin\'ll hold a bit of water, at least'),
 			cost: function() {
 				return {
-					'leather': 50
+					'leather':0
 				};
 			}
 		},
@@ -188,8 +188,8 @@ var Room = {
 			buildMsg: _('the cask holds enough water for longer expeditions'),
 			cost: function() {
 				return {
-					'leather': 100,
-					'iron': 20
+					'leather': 0,
+					'iron': 0
 				};
 			}
 		},
@@ -201,8 +201,8 @@ var Room = {
 			buildMsg: _('never go thirsty again'),
 			cost: function() {
 				return {
-					'iron': 100,
-					'steel': 50
+					'iron': 0,
+					'steel': 0
 				};
 			}
 		},
@@ -213,8 +213,8 @@ var Room = {
 			buildMsg: _("this spear's not elegant, but it's pretty good at stabbing"),
 			cost: function() {
 				return {
-					'wood': 100,
-					'teeth': 5
+					'wood': 0,
+					'teeth': 0
 				};
 			}
 		},
@@ -226,7 +226,7 @@ var Room = {
 			buildMsg: _('carrying more means longer expeditions to the wilds'),
 			cost: function() {
 				return {
-					'leather': 200
+					'leather': 0
 				};
 			}
 		},
@@ -238,8 +238,8 @@ var Room = {
 			buildMsg: _('the wagon can carry a lot of supplies'),
 			cost: function() {
 				return {
-					'wood': 500,
-					'iron': 100
+					'wood': 0,
+					'iron': 0
 				};
 			}
 		},
@@ -251,9 +251,9 @@ var Room = {
 			buildMsg: _('the convoy can haul mostly everything'),
 			cost: function() {
 				return {
-					'wood': 1000,
-					'iron': 200,
-					'steel': 100
+					'wood': 0,
+					'iron': 0,
+					'steel': 0
 				};
 			}
 		},
@@ -264,8 +264,8 @@ var Room = {
 			buildMsg: _("leather's not strong. better than rags, though."),
 			cost: function() {
 				return {
-					'leather': 200,
-					'scales': 20
+					'leather': 0,
+					'scales': 0
 				};
 			}
 		},
@@ -276,8 +276,8 @@ var Room = {
 			buildMsg: _("iron's stronger than leather"),
 			cost: function() {
 				return {
-					'leather': 200,
-					'iron': 100
+					'leather': 0,
+					'iron': 0
 				};
 			}
 		},
@@ -288,8 +288,8 @@ var Room = {
 			buildMsg: _("steel's stronger than iron"),
 			cost: function() {
 				return {
-					'leather': 200,
-					'steel': 100
+					'leather': 0,
+					'steel': 0
 				};
 			}
 		},
@@ -300,9 +300,9 @@ var Room = {
 			buildMsg: _("sword is sharp. good protection out in the wilds."),
 			cost: function() {
 				return {
-					'wood': 200,
-					'leather': 50,
-					'iron': 20
+					'wood': 0,
+					'leather': 0,
+					'iron': 0
 				};
 			}
 		},
@@ -313,9 +313,9 @@ var Room = {
 			buildMsg: _("the steel is strong, and the blade true."),
 			cost: function() {
 				return {
-					'wood': 500,
-					'leather': 100,
-					'steel': 20
+					'wood': 0,
+					'leather': 0,
+					'steel': 0
 				};
 			}
 		},
@@ -325,9 +325,9 @@ var Room = {
 			buildMsg: _("black powder and bullets, like the old days."),
 			cost: function() {
 				return {
-					'wood': 200,
-					'steel': 50,
-					'sulphur': 50
+					'wood': 0,
+					'steel': 0,
+					'sulphur': 0
 				};
 			}
 		}
@@ -337,21 +337,21 @@ var Room = {
 		'scales': {
 			type: 'good',
 			cost: function() {
-				return { fur: 150 };
+				return { fur: 0 };
 			}
 		},
 		'teeth': {
 			type: 'good',
 			cost: function() {
-				return { fur: 300 };
+				return { fur: 0 };
 			}
 		},
 		'iron': {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 150,
-					'scales': 50
+					'fur': 0,
+					'scales': 0
 				};
 			}
 		},
@@ -359,8 +359,8 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 200,
-					'teeth': 50
+					'fur': 0,
+					'teeth': 0
 				};
 			}
 		},
@@ -368,9 +368,9 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 300,
-					'scales': 50,
-					'teeth': 50
+					'fur': 0,
+					'scales': 0,
+					'teeth': 0
 				};
 			}
 		},
@@ -378,7 +378,7 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'scales': 50, 'teeth': 30
+					'scales': 0, 'teeth': 0
 				};
 			}
 		},
@@ -386,7 +386,7 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'scales': 10
+					'scales': 0
 				};
 			}
 		},
@@ -394,8 +394,8 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'scales': 10,
-					'teeth': 10
+					'scales': 0,
+					'teeth': 0
 				};
 			}
 		},
@@ -403,7 +403,7 @@ var Room = {
 			type: 'weapon',
 			cost: function() {
 				return {
-					'teeth': 10
+					'teeth': 0
 				};
 			}
 		},
@@ -411,8 +411,8 @@ var Room = {
 			type: 'weapon',
 			cost: function() {
 				return {
-					'scales': 100,
-					'teeth': 50
+					'scales': 0,
+					'teeth': 0
 				};
 			}
 		},
@@ -420,8 +420,8 @@ var Room = {
 			type: 'weapon',
 			cost: function() {
 				return {
-					'scales': 500,
-					'teeth': 250
+					'scales': 0,
+					'teeth': 0
 				};
 			}
 		},
@@ -429,8 +429,8 @@ var Room = {
 			type: 'good',
 			cost: function() {
 				return {
-					'fur': 1500,
-					'scales': 750,
+					'fur': 0,
+					'scales': 0,
 					'teeth': 300
 				};
 			}
@@ -440,9 +440,9 @@ var Room = {
 			maximum: 1,
 			cost: function() {
 				return { 
-					fur: 400, 
-					scales: 20, 
-					teeth: 10 
+					fur: 0, 
+					scales: 0, 
+					teeth: 0 
 				};
 			}
 		}
